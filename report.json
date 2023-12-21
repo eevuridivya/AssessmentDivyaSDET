@@ -1,0 +1,470 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-feature;validate-the-login-page-title",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validate the login page title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1505717480
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 409555938
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the title \"Swag Labs\"",
+            "match": {
+              "location": "steps/login.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18757779
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 286572435
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-feature;validate-login-error-message",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validate login error message",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1472501175
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 475382462
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I will login as 'locked_out_user'",
+            "match": {
+              "location": "steps/login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 196714599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I validate error message 'Epic sadface: Sorry, this user has been locked out.'",
+            "match": {
+              "location": "steps/login.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11933085
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 290874774
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "tags": [],
+    "uri": "features/login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "purchase-feature;validate-successful-purchase-text",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validate successful purchase text",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1309053058
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 603251037
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I will login as 'standard_user'",
+            "match": {
+              "location": "steps/login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237267830
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I will add the backpack to the cart",
+            "match": {
+              "location": "steps/product.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59835494
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I Select the cart",
+            "match": {
+              "location": "steps/product.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107633014
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I Select Checkout",
+            "match": {
+              "location": "steps/product.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83922437
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I Fill in the First Name, Last Name, and Zip Postal Code",
+            "match": {
+              "location": "steps/product.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112372566
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I Select Continue and Finish",
+            "match": {
+              "location": "steps/product.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128113131
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I Validate the text 'Thank you for your order!'",
+            "match": {
+              "location": "steps/product.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5195227
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 308716934
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "purchase-feature;validate-the-additional-cases",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Validate the Additional cases",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1429063151
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 391373720
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I will login as 'standard_user'",
+            "match": {
+              "location": "steps/login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200231052
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see the title \"Swag Labs\"",
+            "match": {
+              "location": "steps/login.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13289409
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I Verify the products page shopping cart icon and product sort container visible",
+            "match": {
+              "location": "steps/product.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22276578
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I Select an item from product list and add to cart and verify cart is updated to '1'",
+            "match": {
+              "location": "steps/product.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52487815
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I sort the product with Price",
+            "match": {
+              "location": "steps/product.steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35589379
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I Select another item from product list and add to cart and verify cart is updated to '2'",
+            "match": {
+              "location": "steps/product.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73570196
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I Select the cart",
+            "match": {
+              "location": "steps/product.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65978438
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I verify On Your cart page and validate QTY and Description",
+            "match": {
+              "location": "steps/product.steps.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11715034
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I Select Checkout",
+            "match": {
+              "location": "steps/product.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53879070
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I Fill in the First Name and  Zip Postal Code",
+            "match": {
+              "location": "steps/product.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119083905
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I Verify the error message for 'Error: Last Name is required'",
+            "match": {
+              "location": "steps/product.steps.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7121426
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I Click on react burger menu button and click logout",
+            "match": {
+              "location": "steps/product.steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62582764
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 246688498
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "purchase-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Purchase Feature",
+    "tags": [],
+    "uri": "features/purchase.feature"
+  }
+]
